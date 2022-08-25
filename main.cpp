@@ -12,8 +12,7 @@ int main(){
     cin >> ans;
     if(ans == "a" || ans == "s" || ans == "m" || ans == "d"){
         //
-    }
-    else{
+    }else{
         std::cout << "Sorry, I didn't understand that. Please restart the program and try again.";
         return 0;
     }
