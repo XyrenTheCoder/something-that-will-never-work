@@ -4,7 +4,8 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
     double num1, num2;
     string ans;
     
@@ -44,4 +45,3 @@ int main(){
     };
     return 0;
 }
-
