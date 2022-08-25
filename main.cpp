@@ -17,10 +17,6 @@ int main(){
         return 0;
     }
     
-    cout << "Num1: ";
-    cin >> num1;
-    cout << "Num2: ";
-    cin >> num2;
     if(ans == "sin" || ans == "cos" || ans == "tan"){
         cout << "x = ?: ";
         cin >> num1;
@@ -39,6 +35,12 @@ int main(){
         cout << num1 * num2;
     }else if(ans == "d"){
         cout << num1 / num2;
+    }else if(ans == "sin"){
+        cout << sin(num1);
+    }else if(ans == "cos"){
+        cout << cos(num1);
+    }else if(ans == "tan"){
+        cout << tan(num1);
     };
     return 0;
 }
