@@ -21,13 +21,11 @@ int main(){
     std::cin >> num1;
     std::cout << "Enter second number: ";
     std::cin >> num2;
-    if(ans == "a"){ // determines what the script should do if the ans string is a certain char.
+    if(ans == "a"){
         std::cout << num1 + num2;
-    }
-    else if(ans == "s"){
+    }else if(ans == "s"){
         std::cout << num1 - num2;
-    }
-    else if(ans == "m"){
+    }else if(ans == "m"){
         std::cout << num1 * num2;
     }
     else if(ans == "d"){
