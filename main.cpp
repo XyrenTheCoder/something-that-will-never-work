@@ -21,6 +21,16 @@ int main(){
     cin >> num1;
     cout << "Num2: ";
     cin >> num2;
+    if(ans == "sin" || ans == "cos" || ans == "tan"){
+        cout << "x = ?: ";
+        cin >> num1;
+    }else if(ans == "a" || ans == "s" || ans == "m" || ans == "d"){
+        cout << "x = ?: ";
+        cin >> num1;
+        cout << "y = ?: ";
+        cin >> num2;
+    }
+        
     if(ans == "a"){
         cout << num1 + num2;
     }else if(ans == "s"){
