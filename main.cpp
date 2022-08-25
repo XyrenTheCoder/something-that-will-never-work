@@ -1,15 +1,12 @@
-// My first CPP program!
-// Created 2/2/2021 by Nanobot567
-
+// hi i am torturing muself cpp
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
-
 int main()
 {
-    int num1, num2; // define variables
+    double num1, num2;
     string ans;
     
     std::cout << "Would you like to add (a), subtract (s), multiply (m), or divide (d) two numbers? "; 
