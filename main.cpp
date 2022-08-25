@@ -1,4 +1,4 @@
-// hi i am torturing myself cpp
+// hi i am torturing myself with cpp
 #include <iostream>
 #include <cmath>
 
