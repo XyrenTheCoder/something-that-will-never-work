@@ -9,10 +9,10 @@ int main()
     double num1, num2;
     string ans;
     
-    std::cout << "Would you like to add (a), subtract (s), multiply (m), or divide (d) two numbers? "; 
-    std::cin >> ans;
-    if(ans == "a" || ans == "s" || ans == "m" || ans == "d"){ // checks if the string is valid
-        // nothing would happen :D
+    cout << "add (a), subtract (s), multiply (m), or divide (d) two numbers? "; 
+    cin >> ans;
+    if(ans == "a" || ans == "s" || ans == "m" || ans == "d"){
+        //
     }
     else
     {
