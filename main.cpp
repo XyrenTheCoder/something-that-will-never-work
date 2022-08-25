@@ -1,4 +1,4 @@
-// hi i am torturing muself cpp
+// hi i am torturing myself cpp
 #include <iostream>
 #include <cmath>
 
@@ -8,13 +8,12 @@ int main(){
     double num1, num2;
     string ans;
     
-    cout << "add (a), subtract (s), multiply (m), or divide (d) two numbers? "; 
+    cout << "add (a), subtract (s), multiply (m), or divide (d) / two arguments required"; 
     cin >> ans;
     if(ans == "a" || ans == "s" || ans == "m" || ans == "d"){
         //
     }
-    else
-    {
+    else{
         std::cout << "Sorry, I didn't understand that. Please restart the program and try again.";
         return 0;
     }
