@@ -15,7 +15,7 @@ int main()
         //python pass moment
     }else{
         cout << "That option doesnt exist. Are u stupid?";
-        return 0;
+        return 69420;
     }
     
     if(ans == "sin" || ans == "cos" || ans == "tan"){
