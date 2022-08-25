@@ -8,7 +8,7 @@ int main(){
     double num1, num2;
     string ans;
     
-    cout << "add (a), subtract (s), multiply (m), or divide (d) / two arguments required"; 
+    cout << "Available commands: add (a), subtract (s), multiply (m), or divide (d) ";
     cin >> ans;
     if(ans == "a" || ans == "s" || ans == "m" || ans == "d"){
         //
