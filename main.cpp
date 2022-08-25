@@ -13,24 +13,23 @@ int main(){
     if(ans == "a" || ans == "s" || ans == "m" || ans == "d"){
         //
     }else{
-        std::cout << "Sorry, I didn't understand that. Please restart the program and try again.";
+        cout << "That option doesnt exist. Are u stupid?";
         return 0;
     }
     
-    std::cout << "Enter first number: ";
-    std::cin >> num1;
-    std::cout << "Enter second number: ";
-    std::cin >> num2;
+    cout << "Num1: ";
+    cin >> num1;
+    cout << "Num2: ";
+    cin >> num2;
     if(ans == "a"){
-        std::cout << num1 + num2;
+        cout << num1 + num2;
     }else if(ans == "s"){
-        std::cout << num1 - num2;
+        cout << num1 - num2;
     }else if(ans == "m"){
-        std::cout << num1 * num2;
-    }
-    else if(ans == "d"){
-        std::cout << num1 / num2;
+        cout << num1 * num2;
+    }else if(ans == "d"){
+        cout << num1 / num2;
     };
-    return 0; // ends the program
+    return 0;
 }
 
