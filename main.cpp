@@ -9,7 +9,7 @@ int main()
     double num1, num2;
     string ans;
     
-    cout << "Available commands: add (a), subtract (s), multiply (m), divide (d), sine (sin), cosine (cos), tangent (tan)";
+    cout << "Available commands: add (a), subtract (s), multiply (m), divide (d), sine (sin), cosine (cos), tangent (tan): \n";
     cin >> ans;
     if(ans == "a" || ans == "s" || ans == "m" || ans == "d" || ans == "sin" || ans == "cos" || ans == "tan"){
         //python pass moment
