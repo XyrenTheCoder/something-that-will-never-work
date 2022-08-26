@@ -25,7 +25,7 @@ int main()
         return 404; //404 not found but idk
     }
     
-    string onearg[] = {"sin", "cos", "tan", "sinh", "cosh", "tanh"};
+    string onearg[] = {"sin", "cos", "tan", "arcsin", "arccos", "arctan", "sinh", "cosh", "tanh"};
     int a = sizeof(onearg) / sizeof(*onearg);
     
     bool singlchk = find(onearg, onearg + a, ans) != onearg + a; //checks if the math function need 1 or 2 args
