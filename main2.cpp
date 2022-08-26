@@ -40,8 +40,6 @@ int main()
         cout << "y = ? (in form of a + bi, enter value as \"a, b\"): ";
         cin >> y;
     }
-    
-    cplx = o.real + "+" + o.imag + "i"
         
     if(ans == "a"){ //basic
         cout << x + y;
@@ -58,10 +56,10 @@ int main()
         }
     }else if(ans == "sin"){ //trigo
         o = sin(x);
-        cout << cplx;
+        cout << o.real << " + " << o.imag << "i";
     }else if(ans == "cos"){
         o = cos(x);
-        cout << cplx;
+        cout << ;
     }else if(ans == "tan"){
         cout << tan(x);
     }else if(ans == "arcsin"){ //inverse
