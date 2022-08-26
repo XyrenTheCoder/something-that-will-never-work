@@ -28,7 +28,7 @@ int main()
     int onearg[] = {"sin", "cos", "tan", "sinh", "cosh", "tanh"}
     int a = sizeof(onearg) / sizeof(*onearg);
     
-    bool singlchk = find(trigo, trigo + a, ans) != trigo + a;
+    bool singlchk = find(onearg, onearg + a, ans) != onearg + a;
     
     if(singlchk){
         cout << "x = ?: ";
