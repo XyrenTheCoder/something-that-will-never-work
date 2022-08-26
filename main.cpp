@@ -13,7 +13,7 @@ int main()
     cout << "Available commands:\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d)\nTrigonometry:\nsine (sin), cosine (cos), tangent (tan)\nHyperbolic trigonometry:\nsine (sinh), cosine (cosh), tangent (tanh)" << endl;
     cin >> ans;
     
-    int arr[] = {"a", "s", "m", "d", "sin", "cos", "tan", "sinh", "cosh", "tanh"}; //cmd list, just yeet every command name here
+    string arr[] = {"a", "s", "m", "d", "sin", "cos", "tan", "sinh", "cosh", "tanh"}; //cmd list, just yeet every command name here
     int n = sizeof(arr) / sizeof(*arr);
  
     bool e = find(arr, arr + n, ans) != arr + n;
@@ -25,7 +25,7 @@ int main()
         return 404; //404 not found but idk
     }
     
-    int onearg[] = {"sin", "cos", "tan", "sinh", "cosh", "tanh"}
+    string onearg[] = {"sin", "cos", "tan", "sinh", "cosh", "tanh"}
     int a = sizeof(onearg) / sizeof(*onearg);
     
     bool singlchk = find(onearg, onearg + a, ans) != onearg + a; //checks if the math function need 1 or 2 args
