@@ -48,8 +48,8 @@ int main()
         cout << x * y;
     }else if(ans == "d"){
         if (x == 0 && y == 0){
-            cout << "0/0 is indeterminate form"
-            return -1
+            cout << "0/0 is indeterminate form";
+            return -1;
         }else{
             cout << x / y;
         }
