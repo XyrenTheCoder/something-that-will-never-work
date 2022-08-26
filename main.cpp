@@ -19,7 +19,7 @@ int main()
     bool e = find(arr, arr + n, ans) != arr + n;
     
     if (e){
-        continue; //python pass moment, it just feels weird with nothing inside
+        //python pass moment, it just feels weird with nothing inside
     }else{
         cout << "Command not found. Check if your input includes typo, or any mistakes were made.";
         return 404; //404 not found but idk
