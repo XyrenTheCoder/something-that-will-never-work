@@ -4,11 +4,11 @@
 #include <complex>
 #include <cmath>
 
-using namespace std::complex_literals;
+using namespace std::complex;
 
 int main()
 {
-    auto x, y;
+    complex<double> x, y;
     string ans;
     
     cout << "Available commands:\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d)\nTrigonometry:\nsine x (sin), cosine x (cos), tangent x (tan)\nInverse: arc sine (arcsin), arc cosine (arccos), arc tangent (arctan)\nHyperbolic:\nhyperbolic sine x (sinh), hyperbolic cosine x (cosh), hyperbolic tangent x (tanh)" << endl;
