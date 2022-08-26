@@ -9,9 +9,9 @@ int main()
     double num1, num2;
     string ans;
     
-    cout << "Available commands: add (a), subtract (s), multiply (m), divide (d), sine (sin), cosine (cos), tangent (tan): \n";
+    cout << "Available commands:\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d)\nTrigonometry:\nsine (sin), cosine (cos), tangent (tan)\nHyperbolic trigonometry:\nsine (sinh), cosine (cosh), tangent (tanh)" << endl;
     cin >> ans;
-    if(ans == "a" || ans == "s" || ans == "m" || ans == "d" || ans == "sin" || ans == "cos" || ans == "tan"){
+    if(ans == "a" || ans == "s" || ans == "m" || ans == "d" || ans == "sin" || ans == "cos" || ans == "tan" || ans == "sinh" || ans == "cosh" || ans == "tanh"){
         continue; //python pass moment, bloated and ik, it just feels weird with nothing inside
     }else{
         cout << "That option doesnt exist. Are u stupid?";
