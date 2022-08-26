@@ -1,4 +1,3 @@
-// hi i am torturing myself with cpp
 #include <iostream>
 #include <algorithm>
 #include <complex>
@@ -55,25 +54,23 @@ int main()
             cout << x / y;
         }
     }else if(ans == "sin"){ //trigo
-        o = sin(x);
-        cout << real(o) << " + " << imag(o) << "i"; //testing complex output as a + bi
+        cout << real(sin(x)) << "+" << imag(sin(x)) << "i"; //testing complex output as a + bi
     }else if(ans == "cos"){
-        o = cos(x);
-        cout << real(o) << " + " << imag(o) << "i";
+        cout << real(cos(x)) << "+" << imag(cos(x)) << "i";
     }else if(ans == "tan"){
-        cout << tan(x);
+        cout << real(tan(x)) << "+" << imag(tan(x)) << "i";
     }else if(ans == "arcsin"){ //inverse
-        cout << asin(x);
+        cout << real(asin(x)) << "+" << imag(asin(x)) << "i";
     }else if(ans == "arccos"){
-        cout << acos(x);
+        cout << real(acos(x)) << "+" << imag(acos(x)) << "i";
     }else if(ans == "arctan"){
-        cout << atan(x);
+        cout << real(atan(x)) << "+" << imag(atan(x)) << "i";
     }else if(ans == "sinh"){ //hyp
-        cout << sinh(x);
+        cout << real(sinh(x)) << "+" << imag(sinh(x)) << "i";
     }else if(ans == "cosh"){
-        cout << cosh(x);
+        cout << real(cosh(x)) << "+" << imag(cosh(x)) << "i";
     }else if(ans == "tanh"){
-        cout << tanh(x);
+        cout << real(tanh(x)) << "+" << imag(tanh(x)) << "i";
     }
     return 0;
 }
