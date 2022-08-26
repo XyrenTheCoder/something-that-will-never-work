@@ -5,6 +5,10 @@
 
 using namespace std;
 
+typedef struct {
+    double Re, Im
+} complex_t;
+
 int main()
 {
     double x, y;
