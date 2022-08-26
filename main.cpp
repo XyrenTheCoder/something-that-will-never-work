@@ -40,7 +40,7 @@ int main()
         cin >> y;
     }
         
-    if(ans == "a"){
+    if(ans == "a"){ //basic
         cout << x + y;
     }else if(ans == "s"){
         cout << x - y;
@@ -52,14 +52,20 @@ int main()
             return -1;
         }else{
             cout << x / y;
-        }
-    }else if(ans == "sin"){ //trigo starts here
+        
+    }else if(ans == "sin"){ //trigo
         cout << sin(x);
     }else if(ans == "cos"){
         cout << cos(x);
     }else if(ans == "tan"){
         cout << tan(x);
-    }else if(ans == "sinh"){
+    }else if(ans == "arcsin"){ //inverse
+        cout << asin(x);
+    }else if(ans == "arccos"){
+        cout << acos(x);
+    }else if(ans == "arctan"){
+        cout << atan(x);
+    }else if(ans == "sinh"){ //hyp
         cout << sinh(x);
     }else if(ans == "cosh"){
         cout << cosh(x);
