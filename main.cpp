@@ -52,7 +52,6 @@ int main()
             return -1;
         }else{
             cout << x / y;
-        
     }else if(ans == "sin"){ //trigo
         cout << sin(x);
     }else if(ans == "cos"){
