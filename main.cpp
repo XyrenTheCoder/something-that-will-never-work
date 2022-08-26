@@ -54,7 +54,7 @@ int main()
             cout << x / y;
         }
     }else if(ans == "sin"){ //trigo
-        cout << real(sin(x)) << to_string((imag(sin(x)) > 0) ? ("+%d", imag(sin(x))) : imag(sin(x))) << "i"; //testing complex output as a + bi
+        cout << real(sin(x)) << to_string((imag(sin(x)) > 0) ? ("+%d", imag(sin(x))) : imag(sin(x))) << "i";
     }else if(ans == "cos"){
         cout << real(cos(x)) << to_string((imag(cos(x)) > 0) ? ("+%d", imag(cos(x))) : imag(cos(x))) << "i";
     }else if(ans == "tan"){
