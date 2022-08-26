@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    double num1, num2;
+    double x, y;
     string ans;
     
     cout << "Available commands:\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d)\nTrigonometry:\nsine x (sin), cosine x (cos), tangent x (tan)\nHyperbolic trigonometry:\nhyperbolic sine x (sinh), hyperbolic cosine x (cosh), hyperbolic tangent x (tanh)" << endl;
@@ -32,39 +32,39 @@ int main()
     
     if(singlchk){
         cout << "x = ?: ";
-        cin >> num1;
+        cin >> x;
     }else{
         cout << "x = ?: ";
-        cin >> num1;
+        cin >> x;
         cout << "y = ?: ";
-        cin >> num2;
+        cin >> y;
     }
         
     if(ans == "a"){
-        cout << num1 + num2;
+        cout << x + y;
     }else if(ans == "s"){
-        cout << num1 - num2;
+        cout << x - y;
     }else if(ans == "m"){
-        cout << num1 * num2;
+        cout << x * y;
     }else if(ans == "d"){
         if (x == 0 && y == 0){
             cout << "0/0 is indeterminate form"
             return -1
         }else{
-            cout << num1 / num2;
+            cout << x / y;
         }
     }else if(ans == "sin"){ //trigo starts here
-        cout << sin(num1);
+        cout << sin(x);
     }else if(ans == "cos"){
-        cout << cos(num1);
+        cout << cos(x);
     }else if(ans == "tan"){
-        cout << tan(num1);
+        cout << tan(x);
     }else if(ans == "sinh"){
-        cout << sinh(num1);
+        cout << sinh(x);
     }else if(ans == "cosh"){
-        cout << cosh(num1);
+        cout << cosh(x);
     }else if(ans == "tanh"){
-        cout << tanh(num1);
+        cout << tanh(x);
     }
     return 0;
 }
