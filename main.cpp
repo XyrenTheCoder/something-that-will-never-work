@@ -38,7 +38,7 @@ int main()
         cin >> num1;
         cout << "y = ?: ";
         cin >> num2;
-    };
+    }
         
     if(ans == "a"){
         cout << num1 + num2;
@@ -60,6 +60,6 @@ int main()
         cout << cosh(num1);
     }else if(ans == "tanh"){
         cout << tanh(num1);
-    };
+    }
     return 0;
 }
