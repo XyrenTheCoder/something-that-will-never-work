@@ -13,24 +13,27 @@ int main()
     cout << "Available commands:\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d)\nTrigonometry:\nsine (sin), cosine (cos), tangent (tan)\nHyperbolic trigonometry:\nsine (sinh), cosine (cosh), tangent (tanh)" << endl;
     cin >> ans;
     
-    int arr[] = {"a", "s", "m", "d", "sin", "cos", "tan", "sinh", "cosh", "tanh"};
+    int arr[] = {"a", "s", "m", "d", "sin", "cos", "tan", "sinh", "cosh", "tanh"}; //cmd list
     int n = sizeof(arr) / sizeof(*arr);
  
     bool e = find(arr, arr + n, ans) != arr + n;
+    
     if (e){
         continue; //python pass moment, it just feels weird with nothing inside
     }else{
         cout << "Command not found. Check if your input includes typo, or any mistakes were made.";
-        return 69420;
+        return 404; //this specific number
     }
     
+    int onearg[] = {"sin", "cos", "tan", "sinh", "cosh", "tanh"}
+    int a = sizeof(onearg) / sizeof(*onearg);
     
+    bool singlchk = find(trigo, trigo + a, ans) != trigo + a;
     
-    
-    if(ans == "sin" || ans == "cos" || ans == "tan" || ans == "sinh" || ans == "cosh" || ans == "tanh"){
+    if(singlchk){
         cout << "x = ?: ";
         cin >> num1;
-    }else if(ans == "a" || ans == "s" || ans == "m" || ans == "d"){
+    }else{
         cout << "x = ?: ";
         cin >> num1;
         cout << "y = ?: ";
