@@ -4,7 +4,7 @@
 #include <complex>
 #include <cmath>
 
-using namespace std::complex;
+using namespace std;
 
 int main()
 {
@@ -32,12 +32,12 @@ int main()
     bool singlchk = find(onearg, onearg + a, ans) != onearg + a; //checks if the math function need 1 or 2 args
     
     if(singlchk){
-        cout << "x = ? (in form of a + bi): ";
+        cout << "x = ? (in form of a + bi, enter value as \"a, b\"): ";
         cin >> x;
     }else{
-        cout << "x = ?: ";
+        cout << "x = ? (in form of a + bi, enter value as \"a, b\"): ";
         cin >> x;
-        cout << "y = ?: ";
+        cout << "y = ? (in form of a + bi, enter value as \"a, b\"): ";
         cin >> y;
     }
         
@@ -48,7 +48,7 @@ int main()
     }else if(ans == "m"){
         cout << x * y;
     }else if(ans == "d"){
-        if (x == 0 && y == 0){
+        if (x == 0.0, 0.0 && y == 0.0, 0.0){
             cout << "0/0 is indeterminate form";
             return -1;
         }else{
