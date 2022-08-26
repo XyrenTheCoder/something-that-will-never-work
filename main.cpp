@@ -54,23 +54,23 @@ int main()
             cout << x / y;
         }
     }else if(ans == "sin"){ //trigo
-        cout << real(sin(x)) << "+" << imag(sin(x)) << "i"; //testing complex output as a + bi
+        cout << real(sin(x)) << to_string((imag(sin(x)) > 0) ? ("+%d", imag(sin(x))) : imag(sin(x))) << "i"; //testing complex output as a + bi
     }else if(ans == "cos"){
-        cout << real(cos(x)) << "+" << imag(cos(x)) << "i";
+        cout << real(cos(x)) << to_string((imag(cos(x)) > 0) ? ("+%d", imag(cos(x))) : imag(cos(x))) << "i";
     }else if(ans == "tan"){
-        cout << real(tan(x)) << "+" << imag(tan(x)) << "i";
+        cout << real(tan(x)) << to_string((imag(tan(x)) > 0) ? ("+%d", imag(tan(x))) : imag(tan(x))) << "i";
     }else if(ans == "arcsin"){ //inverse
-        cout << real(asin(x)) << "+" << imag(asin(x)) << "i";
+        cout << real(asin(x)) << to_string((imag(asin(x)) > 0) ? ("+%d", imag(asin(x))) : imag(asin(x))) << "i";
     }else if(ans == "arccos"){
-        cout << real(acos(x)) << "+" << imag(acos(x)) << "i";
+        cout << real(acos(x)) << to_string((imag(acos(x)) > 0) ? ("+%d", imag(acos(x))) : imag(acos(x))) << "i";
     }else if(ans == "arctan"){
-        cout << real(atan(x)) << "+" << imag(atan(x)) << "i";
+        cout << real(atan(x)) << to_string((imag(atan(x)) > 0) ? ("+%d", imag(atan(x))) : imag(atan(x))) << "i";
     }else if(ans == "sinh"){ //hyp
-        cout << real(sinh(x)) << "+" << imag(sinh(x)) << "i";
+        cout << real(sinh(x)) << to_string((imag(sinh(x)) > 0) ? ("+%d", imag(sinh(x))) : imag(sinh(x))) << "i";
     }else if(ans == "cosh"){
-        cout << real(cosh(x)) << "+" << imag(cosh(x)) << "i";
+        cout << real(cosh(x)) << to_string((imag(cosh(x)) > 0) ? ("+%d", imag(cosh(x))) : imag(cosh(x))) << "i";
     }else if(ans == "tanh"){
-        cout << real(tanh(x)) << "+" << imag(tanh(x)) << "i";
+        cout << real(tanh(x)) << to_string((imag(tanh(x)) > 0) ? ("+%d", imag(tanh(x))) : imag(tanh(x))) << "i";
     }
     return 0;
 }
