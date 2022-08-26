@@ -59,7 +59,7 @@ int main()
         cout << o.real << " + " << o.imag << "i";
     }else if(ans == "cos"){
         o = cos(x);
-        cout << ;
+        cout << o.real << " + " << o.imag << "i";
     }else if(ans == "tan"){
         cout << tan(x);
     }else if(ans == "arcsin"){ //inverse
