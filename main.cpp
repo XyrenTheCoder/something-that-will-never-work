@@ -10,7 +10,7 @@ int main()
     double num1, num2;
     string ans;
     
-    cout << "Available commands:\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d)\nTrigonometry:\nsine (sin), cosine (cos), tangent (tan)\nHyperbolic trigonometry:\nsine (sinh), cosine (cosh), tangent (tanh)" << endl;
+    cout << "Available commands:\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d)\nTrigonometry:\nsine x (sin), cosine x (cos), tangent x (tan)\nHyperbolic trigonometry:\nhyperbolic sine x (sinh), hyperbolic cosine x (cosh), hyperbolic tangent x (tanh)" << endl;
     cin >> ans;
     
     string arr[] = {"a", "s", "m", "d", "sin", "cos", "tan", "sinh", "cosh", "tanh"}; //cmd list, just yeet every command name here
