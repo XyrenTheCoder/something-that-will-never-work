@@ -1,6 +1,7 @@
 // hi i am torturing myself with cpp
 #include <iostream>
 #include <algorithm>
+#include <complex>
 #include <cmath>
 
 using namespace std;
