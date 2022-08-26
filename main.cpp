@@ -12,7 +12,7 @@ int main()
     cout << "Available commands: add (a), subtract (s), multiply (m), divide (d), sine (sin), cosine (cos), tangent (tan): \n";
     cin >> ans;
     if(ans == "a" || ans == "s" || ans == "m" || ans == "d" || ans == "sin" || ans == "cos" || ans == "tan"){
-        continue; //python pass moment, bloated and ik
+        continue; //python pass moment, bloated and ik, it just feels weird with nothing inside
     }else{
         cout << "That option doesnt exist. Are u stupid?";
         return 69420;
