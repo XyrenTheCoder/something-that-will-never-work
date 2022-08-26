@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    complex<double> x, y;
+    complex<double> x, y, o;
     string ans;
     
     cout << "Available commands:\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d)\nTrigonometry:\nsine x (sin), cosine x (cos), tangent x (tan)\nInverse:\narc sine (arcsin), arc cosine (arccos), arc tangent (arctan)\nHyperbolic:\nhyperbolic sine x (sinh), hyperbolic cosine x (cosh), hyperbolic tangent x (tanh)" << endl;
@@ -56,10 +56,10 @@ int main()
         }
     }else if(ans == "sin"){ //trigo
         o = sin(x);
-        cout << o.real << " + " << o.imag << "i";
+        cout << real(o) << " + " << imag(o) << "i"; //testing complex output as a + bi
     }else if(ans == "cos"){
         o = cos(x);
-        cout << o.real << " + " << o.imag << "i";
+        cout << real(o) << " + " << imag(o) << "i";
     }else if(ans == "tan"){
         cout << tan(x);
     }else if(ans == "arcsin"){ //inverse
