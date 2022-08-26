@@ -47,7 +47,12 @@ int main()
     }else if(ans == "m"){
         cout << num1 * num2;
     }else if(ans == "d"){
-        cout << num1 / num2;
+        if (x == 0 && y == 0){
+            cout << "0/0 is indeterminate form"
+            return -1
+        }else{
+            cout << num1 / num2;
+        }
     }else if(ans == "sin"){ //trigo starts here
         cout << sin(num1);
     }else if(ans == "cos"){
