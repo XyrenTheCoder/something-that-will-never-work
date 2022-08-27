@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int main() {
+int main(){
     complex<double> x, y, o; //define complex
     double a, b; //define real
     string ans;
