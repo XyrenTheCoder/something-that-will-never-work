@@ -8,6 +8,7 @@ using namespace std;
 int main()
 {
     complex<double> x, y, o;
+    double a, b;
     string ans;
     
     cout << "Available commands (enter function which marked inside parentheses):\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d), absolute (abs), square root (sqrt)\nLogarithms:\ncommon base10 logarithm (log10), natural logarithm (ln)\nTrigonometry:\nsine x (sin), cosine x (cos), tangent x (tan)\nInverse:\narc sine (arcsin), arc cosine (arccos), arc tangent (arctan)\nHyperbolic:\nhyperbolic sine x (sinh), hyperbolic cosine x (cosh), hyperbolic tangent x (tanh)" << endl;
@@ -34,10 +35,10 @@ int main()
         cout << "x = ? (in form of a + bi, enter value as \"a, b\"): ";
         cin >> x;
     }else{
-        cout << "x = ? (in form of a + bi, enter value as \"a, b\"): ";
-        cin >> x;
-        cout << "y = ? (in form of a + bi, enter value as \"a, b\"): ";
-        cin >> y;
+        cout << "x = ? (in form of real numbers, enter value as \"x\"): ";
+        cin >> a;
+        cout << "y = ? (in form of real numbers, enter value as \"y\"): ";
+        cin >> b;
     }
         
     if(ans == "a"){ //basic
