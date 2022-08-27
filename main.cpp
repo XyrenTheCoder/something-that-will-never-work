@@ -87,11 +87,11 @@ int main()
         cout << real(tanh(x)) << to_string((imag(tanh(x)) > 0) ? ("+%d", imag(tanh(x))) : imag(tanh(x))) << "i";
         
     }else if(ans == "arcsinh"){ //inverse hyp
-        cout << real(asinh(x)) << to_string((imag(asinh(x)) > 0 ? ("+%d", imag(asinh(x))) : imag(asinh(x))) << "i";
+        cout << real(asinh(x)) << to_string((imag(asinh(x)) > 0) ? ("+%d", imag(asinh(x))) : imag(asinh(x))) << "i";
     }else if(ans == "arccosh"){
-        cout << real(acosh(x)) << to_string((imag(acosh(x)) > 0 ? ("+%d", imag(acosh(x))) : imag(acosh(x))) << "i";
+        cout << real(acosh(x)) << to_string((imag(acosh(x)) > 0) ? ("+%d", imag(acosh(x))) : imag(acosh(x))) << "i";
     }else if(ans == "arctanh"){
-        cout << real(atanh(x)) << to_string((imag(atanh(x)) > 0 ? ("+%d", imag(atanh(x))) : imag(atanh(x))) << "i";
+        cout << real(atanh(x)) << to_string((imag(atanh(x)) > 0) ? ("+%d", imag(atanh(x))) : imag(atanh(x))) << "i";
     }                          
     return 0;
 }
