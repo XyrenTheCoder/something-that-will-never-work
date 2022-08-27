@@ -34,9 +34,9 @@ int main()
         cout << "x = ? (in form of a + bi, enter value as \"a, b\"): ";
         cin >> x;
     }else{
-        cout << "x = ? (in form of a + bi, enter value as \"a, b\"): ";
+        cout << "x = ? (in form of real numbers, enter value as \"x\"): ";
         cin >> x;
-        cout << "y = ? (in form of a + bi, enter value as \"a, b\"): ";
+        cout << "y = ? (in form of real numbers, enter value as \"y\"): ";
         cin >> y;
     }
         
