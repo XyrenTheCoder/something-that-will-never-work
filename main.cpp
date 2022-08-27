@@ -53,6 +53,8 @@ int main()
         }else{
             cout << x / y;
         }
+    }else if(ans == "abs"){ //absolute value
+        cout << real(ans(x)) << to_string((imag(ans(x)) > 0) ? ("+%d", imag(abs(x))) : imag(abs(x))) << "i";
     }else if(ans == "sin"){ //trigo
         cout << real(sin(x)) << to_string((imag(sin(x)) > 0) ? ("+%d", imag(sin(x))) : imag(sin(x))) << "i";
     }else if(ans == "cos"){
