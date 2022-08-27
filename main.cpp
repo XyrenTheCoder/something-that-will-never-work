@@ -11,10 +11,10 @@ int main()
     double a, b; //define real
     string ans;
     
-    cout << "Available commands (enter function which marked inside parentheses):\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d), absolute (abs), square root (sqrt)\nLogarithms:\ncommon base10 logarithm (log10), natural logarithm (ln)\nTrigonometry:\nsine x (sin), cosine x (cos), tangent x (tan)\nInverse:\narc sine (arcsin), arc cosine (arccos), arc tangent (arctan)\nHyperbolic:\nhyperbolic sine x (sinh), hyperbolic cosine x (cosh), hyperbolic tangent x (tanh)" << endl;
+    cout << "Available commands (enter function which marked inside parentheses):\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d), absolute (abs), square root (sqrt)\nLogarithms:\ncommon base10 logarithm (log10), natural logarithm (ln)\nTrigonometry:\nsine (sin), cosine (cos), tangent (tan)\nInverse:\nsine (arcsin), cosine (arccos), tangent (arctan)\nHyperbolic:\nsine (sinh), cosine (cosh), tangent (tanh)\nInverse hyperbolic:\nsine (arcsinh), cosine (arccosh), tangent (arctanh)" << endl;
     cin >> ans;
     
-    string arr[] = {"a", "s", "m", "d", "abs", "sqrt", "log10", "ln", "sin", "cos", "tan", "arcsin", "arccos", "arctan", "sinh", "cosh", "tanh"}; //cmd list, just yeet every command name here
+    string arr[] = {"a", "s", "m", "d", "abs", "sqrt", "log10", "ln", "sin", "cos", "tan", "arcsin", "arccos", "arctan", "sinh", "cosh", "tanh", "arcsinh", "arccosh", "arctanh"}; //cmd list, just yeet every command name here
     int n = sizeof(arr) / sizeof(*arr);
  
     bool e = find(arr, arr + n, ans) != arr + n;
@@ -26,7 +26,7 @@ int main()
         return 404; //404 not found but idk
     }
     
-    string onearg[] = {"abs", "sqrt", "log10", "ln", "sin", "cos", "tan", "arcsin", "arccos", "arctan", "sinh", "cosh", "tanh"};
+    string onearg[] = {"abs", "sqrt", "log10", "ln", "sin", "cos", "tan", "arcsin", "arccos", "arctan", "sinh", "cosh", "tanh", "arcsinh", "arccosh", "arctanh"};
     int d = sizeof(onearg) / sizeof(*onearg);
     
     bool singlchk = find(onearg, onearg + d, ans) != onearg + d; //checks if the math function need 1 or 2 args
@@ -85,6 +85,13 @@ int main()
         cout << real(cosh(x)) << to_string((imag(cosh(x)) > 0) ? ("+%d", imag(cosh(x))) : imag(cosh(x))) << "i";
     }else if(ans == "tanh"){
         cout << real(tanh(x)) << to_string((imag(tanh(x)) > 0) ? ("+%d", imag(tanh(x))) : imag(tanh(x))) << "i";
-    } //inverse hyp
+        
+    }else if(ans == "arcsinh"){ //inverse hyp
+        cout << real(asinh(x)) << to_string((imag(asinh(x)) > 0 ? ("+%d", imag(asinh(x))) : imag(asinh(x))) << "i";
+    }else if(ans == "arccosh"){
+        cout << real(acosh(x)) << to_string((imag(acosh(x)) > 0 ? ("+%d", imag(acosh(x))) : imag(acosh(x))) << "i";
+    }else if(ans == "arctanh"){
+        cout << real(atanh(x)) << to_string((imag(atanh(x)) > 0 ? ("+%d", imag(atanh(x))) : imag(atanh(x))) << "i";
+    }                          
     return 0;
 }
