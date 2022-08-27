@@ -27,9 +27,9 @@ int main()
     }
     
     string onearg[] = {"abs", "sqrt", "log10", "ln", "sin", "cos", "tan", "arcsin", "arccos", "arctan", "sinh", "cosh", "tanh"};
-    int a = sizeof(onearg) / sizeof(*onearg);
+    int d = sizeof(onearg) / sizeof(*onearg);
     
-    bool singlchk = find(onearg, onearg + a, ans) != onearg + a; //checks if the math function need 1 or 2 args
+    bool singlchk = find(onearg, onearg + d, ans) != onearg + d; //checks if the math function need 1 or 2 args
     
     if(singlchk){
         cout << "x = ? (in form of a + bi, enter value as \"a, b\"): ";
