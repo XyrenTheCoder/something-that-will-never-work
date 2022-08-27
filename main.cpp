@@ -56,12 +56,12 @@ int main()
     }else if(ans == "abs"){ //absolute value
         cout << real(abs(x)) << to_string((imag(abs(x)) > 0) ? ("+%d", imag(abs(x))) : imag(abs(x))) << "i";
     }else if(ans == "sqrt"){ //square root
-        cout << real(sqrt(x)) << to_string((imag(sqrt(x)) > 0) ? ("+%d", imag(sqrt(x))) : imag(sqrt)x))) << "i";
+        cout << real(sqrt(x)) << to_string((imag(sqrt(x)) > 0) ? ("+%d", imag(sqrt(x))) : imag(sqrt(x))) << "i";
         
     }else if(ans == "log10"){ //common log base 10
         cout << real(log10(x)) << to_string((imag(log10(x)) > 0) ? ("+%d", imag(log10(x))) : imag(log10(x))) << "i";
     }else if(ans == "ln"){ //natural log 
-        cout << real(log(x)) << to_string((imag(log(x)) > 0) ? ( ("+%d", imag(log(x))) : imag(log(x))) << "i";
+        cout << real(log(x)) << to_string((imag(log(x)) > 0) ? ("+%d", imag(log(x))) : imag(log(x))) << "i";
         
     }else if(ans == "sin"){ //trigo
         cout << real(sin(x)) << to_string((imag(sin(x)) > 0) ? ("+%d", imag(sin(x))) : imag(sin(x))) << "i";
