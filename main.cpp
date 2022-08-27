@@ -83,6 +83,6 @@ int main()
         cout << real(cosh(x)) << to_string((imag(cosh(x)) > 0) ? ("+%d", imag(cosh(x))) : imag(cosh(x))) << "i";
     }else if(ans == "tanh"){
         cout << real(tanh(x)) << to_string((imag(tanh(x)) > 0) ? ("+%d", imag(tanh(x))) : imag(tanh(x))) << "i";
-    }
+    } //inverse hyp
     return 0;
 }
