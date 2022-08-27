@@ -10,7 +10,7 @@ int main()
     complex<double> x, y, o;
     string ans;
     
-    cout << "Available commands:\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d), absolute (abs), square root (sqrt)\nLogarithms:\ncommon base10 logarithm (log10), natural logarithm (ln)\nTrigonometry:\nsine x (sin), cosine x (cos), tangent x (tan)\nInverse:\narc sine (arcsin), arc cosine (arccos), arc tangent (arctan)\nHyperbolic:\nhyperbolic sine x (sinh), hyperbolic cosine x (cosh), hyperbolic tangent x (tanh)" << endl;
+    cout << "Available commands (input function which marked inside parentheses):\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d), absolute (abs), square root (sqrt)\nLogarithms:\ncommon base10 logarithm (log10), natural logarithm (ln)\nTrigonometry:\nsine x (sin), cosine x (cos), tangent x (tan)\nInverse:\narc sine (arcsin), arc cosine (arccos), arc tangent (arctan)\nHyperbolic:\nhyperbolic sine x (sinh), hyperbolic cosine x (cosh), hyperbolic tangent x (tanh)" << endl;
     cin >> ans;
     
     string arr[] = {"a", "s", "m", "d", "abs", "sqrt", "log10", "ln", "sin", "cos", "tan", "arcsin", "arccos", "arctan", "sinh", "cosh", "tanh"}; //cmd list, just yeet every command name here
