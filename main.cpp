@@ -48,7 +48,7 @@ int main()
     }else if(ans == "m"){
         cout << a * b;
     }else if(ans == "d"){
-        if (a == 0.0, 0.0 && b == 0.0, 0.0){
+        if (a == 0.0 && b == 0.0){
             cout << "0/0 is indeterminate form";
             return -1;
         }else{
