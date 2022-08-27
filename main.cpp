@@ -7,8 +7,8 @@ using namespace std;
 
 int main()
 {
-    complex<double> x, y, o;
-    double a, b;
+    complex<double> x, y, o; //define complex
+    double a, b; //define real
     string ans;
     
     cout << "Available commands (enter function which marked inside parentheses):\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d), absolute (abs), square root (sqrt)\nLogarithms:\ncommon base10 logarithm (log10), natural logarithm (ln)\nTrigonometry:\nsine x (sin), cosine x (cos), tangent x (tan)\nInverse:\narc sine (arcsin), arc cosine (arccos), arc tangent (arctan)\nHyperbolic:\nhyperbolic sine x (sinh), hyperbolic cosine x (cosh), hyperbolic tangent x (tanh)" << endl;
@@ -42,18 +42,19 @@ int main()
     }
         
     if(ans == "a"){ //basic
-        cout << x + y;
+        cout << a + b;
     }else if(ans == "s"){
-        cout << x - y;
+        cout << a - b;
     }else if(ans == "m"){
-        cout << x * y;
+        cout << a * b;
     }else if(ans == "d"){
-        if (x == 0.0, 0.0 && y == 0.0, 0.0){
+        if (a == 0.0, 0.0 && b == 0.0, 0.0){
             cout << "0/0 is indeterminate form";
             return -1;
         }else{
-            cout << x / y;
+            cout << a / b;
         }
+        
     }else if(ans == "abs"){ //absolute value
         cout << real(abs(x)) << to_string((imag(abs(x)) > 0) ? ("+%d", imag(abs(x))) : imag(abs(x))) << "i";
     }else if(ans == "sqrt"){ //square root
