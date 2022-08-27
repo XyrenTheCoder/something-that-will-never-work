@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int main(){
+int main() {
     complex<double> x, y, o; //define complex
     double a, b; //define real
     string ans;
@@ -65,7 +65,6 @@ int main(){
     }else if(ans == "ln"){ //natural log 
         if (imag(log(x)) > 0) cout << real(log(x)) << imag(log(x)) << "i";
         else cout << real(log(x)) << "+" << imag(log(x)) << "i";
-        
     }else if(ans == "sin"){ //trigo
         cout << real(sin(x)) << to_string((imag(sin(x)) > 0) ? ("+%d", imag(sin(x))) : imag(sin(x))) << "i";
     }else if(ans == "cos"){
@@ -88,11 +87,14 @@ int main(){
         cout << real(tanh(x)) << to_string((imag(tanh(x)) > 0) ? ("+%d", imag(tanh(x))) : imag(tanh(x))) << "i";
         
     }else if(ans == "arcsinh"){ //inverse hyp
-        cout << real(asinh(x)) << to_string((imag(asinh(x)) > 0) ? ("+%d", imag(asinh(x))) : imag(asinh(x))) << "i";
+        if (imag(asinh(x)) > 0) cout << real(asinh(x)) << imag(asinh(x)) << "i";
+        else cout << real(asinh(x)) << "+" << imag(asinh(x)) << "i";
     }else if(ans == "arccosh"){
-        cout << real(acosh(x)) << to_string((imag(acosh(x)) > 0) ? ("+%d", imag(acosh(x))) : imag(acosh(x))) << "i";
+        if (imag(acosh(x)) > 0) cout << real(acosh(x)) << imag(acosh(x)) << "i";
+        else cout << real(acosh(x)) << "+" << imag(acosh(x)) << "i";
     }else if(ans == "arctanh"){
-        cout << real(atanh(x)) << to_string((imag(atanh(x)) > 0) ? ("+%d", imag(atanh(x))) : imag(atanh(x))) << "i";
+        if (imag(atanh(x)) > 0) cout << real(atanh(x)) << imag(atanh(x)) << "i";
+        else cout << real(atanh(x)) << "+" << imag(atanh(x)) << "i";
     }                          
     return 0;
 }
