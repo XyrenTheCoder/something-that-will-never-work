@@ -10,10 +10,10 @@ int main()
     complex<double> x, y, o;
     string ans;
     
-    cout << "Available commands:\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d), absolute (abs)\nTrigonometry:\nsine x (sin), cosine x (cos), tangent x (tan)\nInverse:\narc sine (arcsin), arc cosine (arccos), arc tangent (arctan)\nHyperbolic:\nhyperbolic sine x (sinh), hyperbolic cosine x (cosh), hyperbolic tangent x (tanh)" << endl;
+    cout << "Available commands:\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d), absolute (abs)\nLogarithms:\ncommon base10 logarithm (log10), natural logarithm (ln)\nTrigonometry:\nsine x (sin), cosine x (cos), tangent x (tan)\nInverse:\narc sine (arcsin), arc cosine (arccos), arc tangent (arctan)\nHyperbolic:\nhyperbolic sine x (sinh), hyperbolic cosine x (cosh), hyperbolic tangent x (tanh)" << endl;
     cin >> ans;
     
-    string arr[] = {"a", "s", "m", "d", "abs", "sin", "cos", "tan", "arcsin", "arccos", "arctan", "sinh", "cosh", "tanh"}; //cmd list, just yeet every command name here
+    string arr[] = {"a", "s", "m", "d", "abs", "log10", "ln", "sin", "cos", "tan", "arcsin", "arccos", "arctan", "sinh", "cosh", "tanh"}; //cmd list, just yeet every command name here
     int n = sizeof(arr) / sizeof(*arr);
  
     bool e = find(arr, arr + n, ans) != arr + n;
@@ -25,7 +25,7 @@ int main()
         return 404; //404 not found but idk
     }
     
-    string onearg[] = {"abs", "sin", "cos", "tan", "arcsin", "arccos", "arctan", "sinh", "cosh", "tanh"};
+    string onearg[] = {"abs", "log10", "ln", "sin", "cos", "tan", "arcsin", "arccos", "arctan", "sinh", "cosh", "tanh"};
     int a = sizeof(onearg) / sizeof(*onearg);
     
     bool singlchk = find(onearg, onearg + a, ans) != onearg + a; //checks if the math function need 1 or 2 args
@@ -56,9 +56,10 @@ int main()
     }else if(ans == "abs"){ //absolute value
         cout << real(abs(x)) << to_string((imag(abs(x)) > 0) ? ("+%d", imag(abs(x))) : imag(abs(x))) << "i";
         
-    }else if(ans == "log10"{ //common log base 10
+    }else if(ans == "log10"){ //common log base 10
         cout << real(log10(x)) << to_string((imag(log10(x)) > 0) ? ("+%d", imag(log10(x))) : imag(log10(x))) << "i";
-    }
+    }else if(ans == "ln"){ //natural log
+        cout << real(log(x)) << to_string((imag(log(x)) > 0) ? ( ("+%d", imag(log(x))) : imag(log(x))) << "i";
         
     }else if(ans == "sin"){ //trigo
         cout << real(sin(x)) << to_string((imag(sin(x)) > 0) ? ("+%d", imag(sin(x))) : imag(sin(x))) << "i";
