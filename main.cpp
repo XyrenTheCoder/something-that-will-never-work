@@ -54,7 +54,11 @@ int main()
             cout << x / y;
         }
     }else if(ans == "abs"){ //absolute value
-        cout << real(ans(x)) << to_string((imag(ans(x)) > 0) ? ("+%d", imag(abs(x))) : imag(abs(x))) << "i";
+        cout << real(abs(x)) << to_string((imag(abs(x)) > 0) ? ("+%d", imag(abs(x))) : imag(abs(x))) << "i";
+        
+    }else if(ans == "log10"{ //common log base 10
+        cout << real(log10(x)) << to_string((imag(log10(x)) > 0) ? ("+%d", imag(log10(x))) : imag(log10(x))) << "i";
+    }
         
     }else if(ans == "sin"){ //trigo
         cout << real(sin(x)) << to_string((imag(sin(x)) > 0) ? ("+%d", imag(sin(x))) : imag(sin(x))) << "i";
