@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <algorithm>
 #include <complex>
@@ -66,6 +65,7 @@ int main() {
     }else if(ans == "ln"){ //natural log 
         if (imag(log(x)) > 0) cout << real(log(x)) << imag(log(x)) << "i";
         else cout << real(log(x)) << "+" << imag(log(x)) << "i";
+        
     }else if(ans == "sin"){ //trigo
         cout << real(sin(x)) << to_string((imag(sin(x)) > 0) ? ("+%d", imag(sin(x))) : imag(sin(x))) << "i";
     }else if(ans == "cos"){
