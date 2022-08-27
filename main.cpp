@@ -55,18 +55,21 @@ int main()
         }
     }else if(ans == "abs"){ //absolute value
         cout << real(ans(x)) << to_string((imag(ans(x)) > 0) ? ("+%d", imag(abs(x))) : imag(abs(x))) << "i";
+        
     }else if(ans == "sin"){ //trigo
         cout << real(sin(x)) << to_string((imag(sin(x)) > 0) ? ("+%d", imag(sin(x))) : imag(sin(x))) << "i";
     }else if(ans == "cos"){
         cout << real(cos(x)) << to_string((imag(cos(x)) > 0) ? ("+%d", imag(cos(x))) : imag(cos(x))) << "i";
     }else if(ans == "tan"){
         cout << real(tan(x)) << to_string((imag(tan(x)) > 0) ? ("+%d", imag(tan(x))) : imag(tan(x))) << "i";
+        
     }else if(ans == "arcsin"){ //inverse
         cout << real(asin(x)) << to_string((imag(asin(x)) > 0) ? ("+%d", imag(asin(x))) : imag(asin(x))) << "i";
     }else if(ans == "arccos"){
         cout << real(acos(x)) << to_string((imag(acos(x)) > 0) ? ("+%d", imag(acos(x))) : imag(acos(x))) << "i";
     }else if(ans == "arctan"){
         cout << real(atan(x)) << to_string((imag(atan(x)) > 0) ? ("+%d", imag(atan(x))) : imag(atan(x))) << "i";
+        
     }else if(ans == "sinh"){ //hyp
         cout << real(sinh(x)) << to_string((imag(sinh(x)) > 0) ? ("+%d", imag(sinh(x))) : imag(sinh(x))) << "i";
     }else if(ans == "cosh"){
