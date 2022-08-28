@@ -75,7 +75,7 @@ int main(){
     }else if(ans == "cot"){
         //cout << 
     }else if(ans == "sec"){
-        cout << real(1/cos(x)) << to_string((imag(1/cos(x)) > 0) ? ("+%d", imag(1/cos(x))) : imag(1/cos(x))) << "i";
+        //cout << real(1/cos(x)) << to_string((imag(1/cos(x)) > 0) ? ("+%d", imag(1/cos(x))) : imag(1/cos(x))) << "i";
     }else if(ans == "csc"){
         //cout <<
         
