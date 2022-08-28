@@ -14,7 +14,7 @@ int main(){
     cout << "Available commands (enter function which marked inside parentheses):\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d), absolute (abs), square root (sqrt)\nLogarithms:\ncommon base10 logarithm (log10), natural logarithm (ln)\nTrigonometry:\nsine (sin), cosine (cos), tangent (tan), cotangent (cot), secant (sec), cosecant (csc)\nInverse:\nsine (arcsin), cosine (arccos), tangent (arctan), cotangent (arccot), secant (arcsec), cosecant (arccsc)\nHyperbolic:\nsine (sinh), cosine (cosh), tangent (tanh), cotangent (coth), secant (sech), cosecant (csch)\nInverse hyperbolic:\nsine (arcsinh), cosine (arccosh), tangent (arctanh), cotangent (arccoth), secant (arcsech), cosecant (arccsch)" << endl;
     cin >> ans;
     
-    string arr[] = {"a", "s", "m", "d", "abs", "sqrt", "log10", "ln", "sin", "cos", "tan", "arcsin", "arccos", "arctan", "sinh", "cosh", "tanh", "arcsinh", "arccosh", "arctanh"}; //cmd list, just yeet every command name here
+    string arr[] = {"a", "s", "m", "d", "abs", "sqrt", "log10", "ln", "sin", "cos", "tan", "cot", "sec", "csc", "arcsin", "arccos", "arctan", "arccot", "arcsec", "arccsc", "sinh", "cosh", "tanh", "coth", "sech", "csch", "arcsinh", "arccosh", "arctanh", "arccoth", "arcsech", "arccsch"}; //cmd list, just yeet every command name here
     int n = sizeof(arr) / sizeof(*arr);
  
     bool e = find(arr, arr + n, ans) != arr + n;
