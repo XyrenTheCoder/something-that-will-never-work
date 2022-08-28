@@ -92,6 +92,12 @@ int main(){
         cout << real(acos(z)) << to_string((imag(acos(z)) > 0) ? ("+%d", imag(acos(z))) : imag(acos(z))) << "i";
     }else if(ans == "arctan"){
         cout << real(atan(z)) << to_string((imag(atan(z)) > 0) ? ("+%d", imag(atan(z))) : imag(atan(z))) << "i";
+    }else if(ans == "arccot"){
+        //cout <<
+    }else if(ans == "arcsec"){
+        //
+    }else if(ans == "arccsc"){
+        //
         
     }else if(ans == "sinh"){ //hyp
         cout << real(sinh(z)) << to_string((imag(sinh(z)) > 0) ? ("+%d", imag(sinh(z))) : imag(sinh(z))) << "i";
@@ -99,6 +105,12 @@ int main(){
         cout << real(cosh(z)) << to_string((imag(cosh(z)) > 0) ? ("+%d", imag(cosh(z))) : imag(cosh(z))) << "i";
     }else if(ans == "tanh"){
         cout << real(tanh(z)) << to_string((imag(tanh(z)) > 0) ? ("+%d", imag(tanh(z))) : imag(tanh(z))) << "i";
+    }else if(ans == "coth"){
+    
+    }else if(ans == "sech"){
+        
+    }else if(ans == "csch"){
+        
         
     }else if(ans == "arcsinh"){ //inverse hyp
         if (imag(asinh(z)) > 0) cout << real(asinh(z)) << imag(asinh(z)) << "i";
@@ -109,6 +121,15 @@ int main(){
     }else if(ans == "arctanh"){
         if (imag(atanh(z)) > 0) cout << real(atanh(z)) << imag(atanh(z)) << "i";
         else cout << real(atanh(z)) << "+" << imag(atanh(z)) << "i";
-    }                          
+    }else if(ans == "arccoth"){
+        
+        
+    }else if(ans == "arcsech"){
+
+
+    }else if(ans == "arccsch"){
+        
+        
+    }
     return 0;
 }
