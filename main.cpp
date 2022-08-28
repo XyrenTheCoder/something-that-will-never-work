@@ -72,6 +72,9 @@ int main(){
         cout << real(cos(x)) << to_string((imag(cos(x)) > 0) ? ("+%d", imag(cos(x))) : imag(cos(x))) << "i";
     }else if(ans == "tan"){
         cout << real(tan(x)) << to_string((imag(tan(x)) > 0) ? ("+%d", imag(tan(x))) : imag(tan(x))) << "i";
+    }else if(ans == "sec"){
+        cout <<
+        
         
     }else if(ans == "arcsin"){ //inverse
         cout << real(asin(x)) << to_string((imag(asin(x)) > 0) ? ("+%d", imag(asin(x))) : imag(asin(x))) << "i";
