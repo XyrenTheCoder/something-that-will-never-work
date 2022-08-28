@@ -6,8 +6,9 @@
 using namespace std;
 
 int main(){
-    complex<double> x, y, o; //define complex
-    double a, b; //define real
+    complex<double> x; //define complex
+    double a, b; //define real (2 vars)
+    double y; //define real (1 var)
     string ans;
     
     cout << "Available commands (enter function which marked inside parentheses):\nBasic operations:\nadd (a), subtract (s), multiply (m), divide (d), absolute (abs), square root (sqrt)\nLogarithms:\ncommon base10 logarithm (log10), natural logarithm (ln)\nTrigonometry:\nsine (sin), cosine (cos), tangent (tan)\nInverse:\nsine (arcsin), cosine (arccos), tangent (arctan)\nHyperbolic:\nsine (sinh), cosine (cosh), tangent (tanh)\nInverse hyperbolic:\nsine (arcsinh), cosine (arccosh), tangent (arctanh)" << endl;
@@ -73,11 +74,11 @@ int main(){
     }else if(ans == "tan"){
         cout << real(tan(x)) << to_string((imag(tan(x)) > 0) ? ("+%d", imag(tan(x))) : imag(tan(x))) << "i";
     }else if(ans == "cot"){
-        //cout << 
+        cout << 1.0 / tan(y)
     }else if(ans == "sec"){
-        //cout << real(1/cos(x)) << to_string((imag(1/cos(x)) > 0) ? ("+%d", imag(1/cos(x))) : imag(1/cos(x))) << "i";
+        cout << 1.0 / cos(y)
     }else if(ans == "csc"){
-        //cout <<
+        //cout << 
         
     }else if(ans == "arcsin"){ //inverse
         cout << real(asin(x)) << to_string((imag(asin(x)) > 0) ? ("+%d", imag(asin(x))) : imag(asin(x))) << "i";
